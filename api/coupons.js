@@ -1,7 +1,3 @@
-const CJ_API_KEY = 'YOUR_CJ_API_KEY';
-const WEBSITE_ID = 'YOUR_CJ_WEBSITE_ID';
-
-const FALLBACK_COUPONS = {
 const FALLBACK_COUPONS = {
   'gap.com': [
     { code: 'TREAT', title: 'Extra 20% off your purchase' },
@@ -14,10 +10,10 @@ const FALLBACK_COUPONS = {
     { code: 'EARLYBF', title: 'Early Black Friday savings' }
   ],
   'target.com': [
-    { code: 'JOIN & SAVE', title: 'Save with Target Circle membership' }
+    { code: 'JOINSAVE', title: 'Save with Target Circle membership' }
   ],
   'amazon.com': [
-    { code: '', title: 'Your session is affiliate-tracked — you earn on every purchase' }
+    { code: '', title: 'Your session is affiliate-tracked' }
   ]
 };
 
@@ -33,7 +29,6 @@ export default async function handler(req, res) {
 
   const cleanDomain = domain.replace(/^(www\.|secure-www\.|m\.)/, '').toLowerCase();
   
-  // Return fallback coupons for now — CJ integration coming next
   const coupons = FALLBACK_COUPONS[cleanDomain] || [
     { code: 'SAVE10', title: '10% off your order' },
     { code: 'FREESHIP', title: 'Free shipping on orders over $25' }
