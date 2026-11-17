@@ -2,9 +2,9 @@ const CJ_API_KEY = 'YOUR_CJ_API_KEY';
 const WEBSITE_ID = 'YOUR_CJ_WEBSITE_ID';
 
 const FALLBACK_COUPONS = {
-  'gap.com': [
-    { code: 'GAPFALL', title: '40% off full price styles' },
-    { code: 'GAPDENIM', title: '50% off denim' }
+'gap.com': [
+    { code: 'TREAT', title: 'Extra 20% off your purchase' },
+    { code: 'ALLFORYOU', title: 'Extra 15% off purchase' }
   ],
   'oldnavy.com': [
     { code: 'ONFALL', title: '40% off your purchase' }
