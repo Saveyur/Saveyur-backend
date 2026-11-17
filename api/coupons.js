@@ -2,18 +2,19 @@ const CJ_API_KEY = 'YOUR_CJ_API_KEY';
 const WEBSITE_ID = 'YOUR_CJ_WEBSITE_ID';
 
 const FALLBACK_COUPONS = {
-'gap.com': [
+const FALLBACK_COUPONS = {
+  'gap.com': [
     { code: 'TREAT', title: 'Extra 20% off your purchase' },
     { code: 'ALLFORYOU', title: 'Extra 15% off purchase' }
   ],
   'oldnavy.com': [
-    { code: 'ONFALL', title: '40% off your purchase' }
+    { code: 'EXTRA', title: 'Extra % off your purchase' }
   ],
   'nike.com': [
-    { code: 'NIKERUN', title: '20% off running gear' }
+    { code: 'EARLYBF', title: 'Early Black Friday savings' }
   ],
   'target.com': [
-    { code: 'TARGET10', title: '10% off your order' }
+    { code: 'JOIN & SAVE', title: 'Save with Target Circle membership' }
   ],
   'amazon.com': [
     { code: '', title: 'Your session is affiliate-tracked — you earn on every purchase' }
