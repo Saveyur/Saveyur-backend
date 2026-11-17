@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'domain parameter required' });
   }
 
-  const cleanDomain = domain.replace('www.', '').toLowerCase();
+  const cleanDomain = domain.replace(/^(www\.|secure-www\.|m\.)/, '').toLowerCase();
   
   // Return fallback coupons for now — CJ integration coming next
   const coupons = FALLBACK_COUPONS[cleanDomain] || [
