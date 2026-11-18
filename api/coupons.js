@@ -15,6 +15,21 @@ const FALLBACK_COUPONS = {
   'target.com': [
     { code: 'JOINSAVE', title: 'Save with Target Circle membership' }
   ],
+  'walmart.com': [
+    { code: 'TRIPLE15', title: '15% off your order' },
+    { code: 'DOUBLE10', title: '10% off your order' }
+  ],
+  'hm.com': [
+    { code: 'HMTEXTS20', title: '20% off your purchase' },
+    { code: 'APP20', title: '20% off via H&M app' }
+  ],
+  'dsw.com': [
+    { code: 'HEATWAVE', title: 'Extra savings on your order' },
+    { code: 'FALLFORDSW', title: 'Fall savings at DSW' }
+  ],
+  'hotels.com': [
+    { code: 'NEW10', title: '10% off your first booking' }
+  ],
   'amazon.com': [
     { code: '', title: 'Your session is affiliate-tracked' }
   ]
